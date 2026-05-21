@@ -9,7 +9,7 @@ namespace BibliotecaAPI.Models
         [StringLength(100, ErrorMessage = "El título no puede tener más de 200 caracteres.")]
         public string Titulo { get; set; }
         [Required(ErrorMessage = "El autor es obligatorio.")]
-        [StringLength(100, ErrorMessage = "El autor no puede tener más de 100 caracteres.")]
+        [StringLength(200, ErrorMessage = "El autor no puede tener más de 200 caracteres.")]
         public string Autor { get; set; }
         [Required(ErrorMessage = "El género es obligatorio.")]
         [StringLength(100, ErrorMessage = "El género no puede tener más de 100 caracteres.")]
